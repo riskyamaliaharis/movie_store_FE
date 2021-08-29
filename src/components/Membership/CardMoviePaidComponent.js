@@ -1,15 +1,16 @@
 import moviesList from '../../data/movies'
 import {Card, Button, Table, Modal, Dropdown} from 'react-bootstrap'
-import './CardComponent.css'
+import '../MoviesComponents/CardComponent'
 import {useState} from 'react'
 
-function CardComponent() {
+function CardMoviePaidComponent() {
+  const moviePaid = moviesList.filter(movie => {return movie.type===2})
   const [showDetails, setShowDetails] = useState(false);
   const handleCloseDetails = () => setShowDetails(false);
   const handleShowDetails = () => setShowDetails(true);
     return (
-        <div className="row ">
-            {moviesList.map(movie=> {
+        <div className="row">
+            {moviePaid.map(movie=> {
                 return (
                     <div className="col-lg-3 col-md-6 col-sm-8">                                                
                             
@@ -18,14 +19,10 @@ function CardComponent() {
                                     <Card.Body>
                                         <Card.Title className="text-center">{movie.title}</Card.Title>
                                         <div className="text-center mb-4">
-                                        <h2>{movie.type===1? 'FREE' : 'PAID'}</h2>
+                                        <h2>IDR {movie.price}</h2>
                                         </div>
                                         <div className="text-center d-grid gap-2">
-                                        {movie.type===1
-                                            ? <Button variant="danger" >WATCH</Button>
-                                            : <Button variant="danger" onClick={handleShowDetails}>SUBSCRIBE</Button>
-                                        }
-                                        
+                                         <Button variant="danger" onClick={handleShowDetails}>SUBSCRIBE</Button>                                        
                                         </div>
                                         
                                     </Card.Body>
@@ -78,5 +75,5 @@ function CardComponent() {
     )
 }
 
-export default CardComponent
+export default CardMoviePaidComponent
 

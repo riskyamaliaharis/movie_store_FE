@@ -7,10 +7,10 @@ function MoviesList() {
         <>
         <Header />
         <div className="container-fluid d-flex justify-content-around px-5">
-            <div className="m">
-
-            <CardComponent />
-            </div>
+            
+            <br />
+            <br />
+            <CardComponent />           
            
         </div>
         </>

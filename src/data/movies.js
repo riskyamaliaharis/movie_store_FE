@@ -10,8 +10,8 @@ export default [
         id      : 2,
         title   : 'Little Thing Called Love',
         image   : 'https://i.mydramalist.com/jQv6rf.jpg',
-        type    : 1,
-        price   : 0
+        type    : 2,
+        price   : 33000
     },
     {
         id      : 3,
@@ -24,8 +24,8 @@ export default [
         id      : 4,
         title   : 'Avengers',
         image   : 'https://cdn06.pramborsfm.com/storage/app/media/tr:w-700,f-jpg/Prambors/Editorial/AVENGERS-20201102060644.jpg',
-        type    : 1,
-        price   : 0
+        type    : 2,
+        price   : 29000
     },
     {
         id      : 5,
@@ -39,14 +39,14 @@ export default [
         title   : 'Avengers',
         image   : 'https://cdn06.pramborsfm.com/storage/app/media/tr:w-700,f-jpg/Prambors/Editorial/AVENGERS-20201102060644.jpg',
         type    : 2,
-        price   : 0
+        price   : 5000
     },
     {
         id      : 7,
         title   : 'Avengers',
         image   : 'https://cdn06.pramborsfm.com/storage/app/media/tr:w-700,f-jpg/Prambors/Editorial/AVENGERS-20201102060644.jpg',
         type    : 2,
-        price   : 0
+        price   : 7000
     },
     {
         id      : 9,

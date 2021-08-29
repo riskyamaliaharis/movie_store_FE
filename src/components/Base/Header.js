@@ -11,8 +11,10 @@ function Header() {
   const [showRegist, setShowRegist] = useState(false);
   const handleCloseRegist = () => setShowRegist(false);
   const handleShowRegist = () => setShowRegist(true);
+  const isLogin = false;
+  if (isLogin){
     return (
-        <div>
+        <div className="header-set">
             <Navbar className="opacity2" bg="dark" variant="dark" fixed="top">
                 <Container fluid>
                 <Navbar.Brand href="#home" className="nav-font-size">S movie store</Navbar.Brand>
@@ -91,6 +93,26 @@ function Header() {
             </Modal>
         </div>
     )
+  } else {
+    return (
+        <div className="header-set">
+            <Navbar className="opacity2" bg="dark" variant="dark" fixed="top">
+                <Container fluid>
+                <Navbar.Brand href="#home" className="nav-font-size">S</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home" className="nav-font-size">Movies</Nav.Link>
+                        <Nav.Link href="#features" className="nav-font-size">Membership</Nav.Link>
+                        <Nav.Link href="#pricing" className="nav-font-size">Transaction</Nav.Link>
+                    </Nav>                    
+                </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div>
+    )
+  }
+    
 }
 
 export default Header
