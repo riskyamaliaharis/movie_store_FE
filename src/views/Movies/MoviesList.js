@@ -8,8 +8,7 @@ function MoviesList() {
         <Header />
         <div className="container-fluid d-flex justify-content-around px-5">
             
-            <br />
-            <br />
+            
             <CardComponent />           
            
         </div>

@@ -8,7 +8,7 @@ function CardComponent() {
   const handleCloseDetails = () => setShowDetails(false);
   const handleShowDetails = () => setShowDetails(true);
     return (
-        <div className="row ">
+        <div className="row mt-5">
             {moviesList.map(movie=> {
                 return (
                     <div className="col-lg-3 col-md-6 col-sm-8">                                                

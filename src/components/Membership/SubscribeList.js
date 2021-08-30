@@ -5,7 +5,9 @@ function SubscribeList(){
     const subYear = 350000
     return (
         <>
-            <Table striped bordered hover variant="danger">
+            <br />
+            <br />
+            <Table striped bordered hover variant="danger mt-5">
                 <thead>
                     <tr className="text-center">
 
